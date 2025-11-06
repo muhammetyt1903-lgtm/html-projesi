@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>dündürümcü</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff3d4;
+      
+    }
+
+    .tab-container {
+      width: 94%;
+      margin: 40px auto;
+      background: #ffe9a1d3;
+      border-radius: 8px;}
+
+    
+    .tab-buttons {
+      display: flex;
+    background-color: #ffee00;
+      border-radius: 16px 8px 0 0;
+        overflow: hidden;
+    }
+
+    .tab-buttons button {
+      flex: 1;
+      padding: 14px;
+      color: #000;
+      background: #f8e765;
+      transition: background 0.3s;
+      font-size: 20px;
+      
+
+        }
+
+    .tab-buttons button:hover {
+      background: #fc9930;
+    }
+
+    .tab-buttons button.active {
+      background: #ff4d00;
+      color: #ffcc00;
+      
+    }
+
+    .tab-content {
+      display: none;
+      padding: 30px;
+      animation: fadeIn 0.4s;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+  
+    
+
+    img {
+      margin: 9px 5;
+      border-radius: 16px;
+    }
+
+    a {
+      color: #ff4d00;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tab-container">
+    <div class="tab-buttons">
+      <button class="tab-link active" onclick="openTab(event, 'anamenu')">Ana Sayfa</button>
+      <button class="tab-link" onclick="openTab(event, 'menu')">Menü</button>
+      <button class="tab-link" onclick="openTab(event, 'konum')">Restoranlar</button>
+      <button class="tab-link" onclick="openTab(event, 'iletisim')">İletişim</button>
+      <button class="tab-link" onclick="openTab(event, 'yardim')">hakkımızda</button>
+    </div>
+
+    <div id="anamenu" class="tab-content active">
+      
+      
+        <p style="color:#ff4d00;      text-align: center; font-size: 50px;">DÜNDÜRÜMCÜ</p>
+
+      <img src="https://images.deliveryhero.io/image/fd-tr/LH/fpvo-listing.jpg" style="display: block; margin: 0 auto;" width="1000" height="450"> 
+        
+        <p style="text-align: center; font-size: 30px;">BAKIRKÖYÜMÜZÜN ÖĞRENCİ DOSTU DÜRÜMCÜSÜ</p>
+        
+    </div>
+
+    <div id="menu" class="tab-content">
+      <h1 style="text-align: center;"    >menü</h1> 
+      <p style=" color:#ff0000;  text-align: center; font-size: 50px;">ÖĞRENCİLERE ÖZEL 210 YTL</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqDc2uYP-O7IDyBA0k0ERIGH-xf93iNHRemw&s" alt="dürüm" width="300">
+      <p style="font-size: 30px;">dürüm</p>
+
+      
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Pommes-1.jpg" alt="patates" width="300"> 
+      <p style="font-size: 30px;"  <br>              patates</p>
+      <img src="https://lh6.googleusercontent.com/proxy/GcT1WvNr4p7VffmHkfglvzXsB1IJo6aaiYEOvNqEq-IXXihW0qMyINLC6Ejsr3_HuY4MMuKIK3NFm_BX3gi4vPfZm53Sn13r73B3NLloLbIZBMo5sHs51B7y9glItQX62DNa1UW9mz08uE5x1mxTo62bPGsmnhzVuQ9jmfFwWNrR4fQwt8KlS2P5_PPAKWc4TNcE_jd2u7Ue"width="300"> 
+      <p style="font-size: 30px;"  <br>              sınırsız içecek</p> <BR> (sadece 50 tl fark ile)
+        <p style="color: #ff0000;  text-align: center; font-size: 50px;">ÖĞRENCİLERE ÖZEL 210 YTL</p>
+    </div>
+
+    <div id="konum" class="tab-content">
+      
+      <p>bakırköy şubemiz:</p>
+      </iframe>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d381.7456186557857!2d28.87288467400438!3d40.98323063169319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1762346054682!5m2!1str!2str"
+      width="600" height="450" style="border: 12px;;" allowfullscreen="1" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+      
+  </iframe> 
+      <img src="https://msuconsultancy.com/wp-content/uploads/2022/07/a8888e7a_bakirkoy_2_960.jpg" alt="bakırköy bayimiz" width="650">
+      <h2>ulaşım</h2>
+      <p style="font-size: 14px;">şubemiz bakırköyde olduğu için m1 metrosu, m3 metrosu, marmaray, metrobus, otobus, minubus, vapur ve tramvayla ulaşım sağlayabilirsiniz </p>
+    </div>
+
+    <div id="iletisim" class="tab-content">
+      <h2>İletişim</h2>
+      <p style="font-size: 30px;"     >Bize ulaşın: <a href="mailto:muhammetyt1903@gmail.com">mail</a></p>
+      <p style="font-size: 30px;"     >+90 511 194 17 67</p>
+
+    </div>
+
+    <div id="yardim" class="tab-content">
+      <h2>hakkımızda</h2>
+      <p style="text-align: center; font-size: 40px;">1986'DAN BERİ </p>
+      
+      <p style="text-align: center;">öğrencilere kalitesiz hizmet sunmak için elimizden geleni yapıyoruz</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1RxzXLYD28-nEIO-xRW  BPHYoNCkq9elqRPw&s" width="500" style="display: block; margin: 0 auto;">
+      <p style="text-align: center; font-size: 30px;">1987 den beri dürüm ustamız olan mami usta</p>
+      <h1>İÇİNDEKİLER</h1>
+      <h2>etimiz</h2>
+      <P>süpermarketlerde satılan hazır dönerleri pişirip servis ediyoruz</P>
+      <h2>özel sosumuz</h2>
+      <p>ustamızın tecrübesiyle yaptığı sosumuz dündürüm özel olduğu için tarifi paylaşılmamaktadır</p>
+      <h2>patates</h2>
+      <p>tam kıvamında olan bayatlığı ile yedikçe yemek isteyeceksiniz</p>
+    </div>
+  </div>
+
+  <script>
+    function openTab(evt, tabName) {
+      var contents = document.getElementsByClassName("tab-content");
+      for (var i = 0; i < contents.length; i++) {
+        contents[i].classList.remove("active");
+      }
+
+     
+      var links = document.getElementsByClassName("tab-link");
+      for (var i = 0; i < links.length; i++) {
+        links[i].classList.remove("active");
+      }
+
+      document.getElementById(tabName).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+  </script>
+
+</body>
+</html>
