@@ -1,3 +1,3 @@
-muhammetyt1903@gmail.com  
+Muhammet Yavuz Türkmen
 
 25151513041
