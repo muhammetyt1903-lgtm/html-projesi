@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>dündürümcü</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff3d4;
+    }
+
+    .tab-container {
+      width: 94%;
+      margin: 40px auto;
+      background: #ffe9a1d3;
+      border-radius: 8px;
+      position: relative;
+    }
+
+   
+    input[type="radio"] {
+      display: none;
+    }
+
+    
+    .tab-buttons {
+      display: flex;
+      background-color: #ffee00;
+      border-radius: 16px 8px 0 0;
+      overflow: hidden;
+    }
+
+    .tab-buttons label {
+      flex: 1;
+      padding: 14px;
+      color: #000;
+      background: #f8e765;
+      transition: background 0.3s;
+      font-size: 20px;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .tab-buttons label:hover {
+      background: #fc9930;
+    }
+
+
+    #tab1:checked ~ .tab-buttons label[for="tab1"],
+    #tab2:checked ~ .tab-buttons label[for="tab2"],
+    #tab3:checked ~ .tab-buttons label[for="tab3"],
+    #tab4:checked ~ .tab-buttons label[for="tab4"],
+    #tab5:checked ~ .tab-buttons label[for="tab5"] {
+      background: #ff4d00;
+      color: #ffcc00;
+    }
+
+   
+    .tab-content {
+      display: none;
+      padding: 30px;
+      animation: fadeIn 0.4s;
+    }
+
+   
+    #tab1:checked ~ #anamenu,
+    #tab2:checked ~ #menu,
+    #tab3:checked ~ #konum,
+    #tab4:checked ~ #iletisim,
+    #tab5:checked ~ #yardim {
+      display: block;
+    }
+
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    img {
+      margin: 9px 5px;
+      border-radius: 16px;
+    }
+
+    a {
+      color: #ff4d00;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tab-container">
+    <input type="radio" name="tabs" id="tab1" checked>
+    <input type="radio" name="tabs" id="tab2">
+    <input type="radio" name="tabs" id="tab3">
+    <input type="radio" name="tabs" id="tab4">
+    <input type="radio" name="tabs" id="tab5">
+
+    <div class="tab-buttons">
+      <label for="tab1">Ana Sayfa</label>
+      <label for="tab2">Menü</label>
+      <label for="tab3">Restoranlar</label>
+      <label for="tab4">İletişim</label>
+      <label for="tab5">Hakkımızda</label>
+    </div>
+
+    <div id="anamenu" class="tab-content">
+        <p style="color:#ff4d00; text-align: center; font-size: 50px;">DÜNDÜRÜMCÜ</p>
+        <img src="https://images.deliveryhero.io/image/fd-tr/LH/fpvo-listing.jpg" style="display: block; margin: 0 auto;" width="1000" height="450"> 
+        <p style="text-align: center; font-size: 30px;">BAKIRKÖYÜMÜZÜN ÖĞRENCİ DOSTU DÜRÜMCÜSÜ</p>
+    </div>
+
+    <div id="menu" class="tab-content">
+      <h1 style="text-align: center;">Menü</h1> 
+      <p style="color:#ff0000; text-align: center; font-size: 50px;">ÖĞRENCİLERE ÖZEL 210 YTL</p>
+      
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqDc2uYP-O7IDyBA0k0ERIGH-xf93iNHRemw&s" alt="dürüm" width="300">
+      <p style="font-size: 30px;">Dürüm</p>
+
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Pommes-1.jpg" alt="patates" width="300"> 
+      <p style="font-size: 30px;">Patates</p>
+      
+      <img src="https://lh6.googleusercontent.com/proxy/GcT1WvNr4p7VffmHkfglvzXsB1IJo6aaiYEOvNqEq-IXXihW0qMyINLC6Ejsr3_HuY4MMuKIK3NFm_BX3gi4vPfZm53Sn13r73B3NLloLbIZBMo5sHs51B7y9glItQX62DNa1UW9mz08uE5x1mxTo62bPGsmnhzVuQ9jmfFwWNrR4fQwt8KlS2P5_PPAKWc4TNcE_jd2u7Ue" width="300"> 
+      <p style="font-size: 30px;">Sınırsız İçecek</p> <br> (sadece 50 TL fark ile)
+      <p style="color: #ff0000; text-align: center; font-size: 50px;">ÖĞRENCİLERE ÖZEL 210 YTL</p>
+    </div>
+
+    <div id="konum" class="tab-content">
+      <p>Bakırköy Şubemiz:</p>
+      
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.650490012752!2d28.87208837655075!3d40.98293397135368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c32f8722fe1169%3A0x296542125e197473!2zQmFrxLFya8O2eSwgQmFrxLFya8O2eS_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" 
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+      <br>
+      <img src="https://msuconsultancy.com/wp-content/uploads/2022/07/a8888e7a_bakirkoy_2_960.jpg" alt="bakırköy bayimiz" width="650">
+      <h2>Ulaşım</h2>
+      <p style="font-size: 14px;">Şubemiz Bakırköy'de olduğu için M1 metrosu, M3 metrosu, Marmaray, metrobüs, otobüs, minibüs, vapur ve tramvayla ulaşım sağlayabilirsiniz.</p>
+    </div>
+
+    <div id="iletisim" class="tab-content">
+      <h2>İletişim</h2>
+      <p style="font-size: 30px;">Bize ulaşın: <a href="mailto:muhammetyt1903@gmail.com">Mail Gönder</a></p>
+      <p style="font-size: 30px;">+90 511 194 17 67</p>
+    </div>
+
+    <div id="yardim" class="tab-content">
+      <h2>Hakkımızda</h2>
+      <p style="text-align: center; font-size: 40px;">1986'DAN BERİ</p>
+      
+      <p style="text-align: center;">Öğrencilere kalitesiz hizmet sunmak için elimizden geleni yapıyoruz.</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1RxzXLYD28-nEIO-xRW BPHYoNCkq9elqRPw&s" width="500" style="display: block; margin: 0 auto;">
+      <p style="text-align: center; font-size: 30px;">1987'den beri dürüm ustamız olan Mami Usta</p>
+      <h1>İÇİNDEKİLER</h1>
+      <h2>Etimiz</h2>
+      <p>Süpermarketlerde satılan hazır dönerleri pişirip servis ediyoruz.</p>
+      <h2>Özel Sosumuz</h2>
+      <p>Ustamızın tecrübesiyle yaptığı sosumuz dündürüm özel olduğu için tarifi paylaşılmamaktadır.</p>
+      <h2>Patates</h2>
+      <p>Tam kıvamında olan bayatlığı ile yedikçe yemek isteyeceksiniz.</p>
+    </div>
+  </div>
+
+</body>
+</html>
